@@ -1,6 +1,10 @@
 import csv #Import csv module
+import os
+file_upload=os.path.join("resources","budget_data.csv")
 
-with open ('budget_data.csv') as csvfile: #Start csv file handling
+with open(file_upload) as csvfile:
+
+#with open ('budget_data.csv') as csvfile: #Start csv file handling
 
     csvreader=csv.reader(csvfile, delimiter=',') #Specify delimiter and variable 
     header=next(csvreader) #Read the header row first

@@ -1,6 +1,13 @@
 import csv #Import csv module
+import os
+file_upload=os.path.join("resources","election_data.csv")
 
-with open ('election_data.csv') as csvfile: #Start csv file handling
+with open(file_upload) as csvfile:
+
+
+#import csv #Import csv module
+
+#with open ('election_data.csv') as csvfile: #Start csv file handling
 
     csvreader=csv.reader(csvfile, delimiter=',') #Specify delimiter and variable 
     header=next(csvreader) #Read the header row first
